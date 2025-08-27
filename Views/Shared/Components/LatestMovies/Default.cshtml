@@ -1,0 +1,13 @@
+﻿@model List<Movie>
+
+<ul>
+    @foreach (var movie in Model)
+    {
+        <li>
+            <div>
+                <h4>@movie.Title</h4>
+                <span>@movie.ReleaseYear</span>
+            </div>
+        </li>
+    }
+</ul>

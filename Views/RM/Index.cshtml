@@ -1,0 +1,16 @@
+﻿@model RickAndMortyCharacter
+
+<div>
+    @if(Model == null)
+    {
+        <p>Vi kunde inte hämta karaktären</p>
+    }
+    else
+    {
+        <h2>Name: @Model.Name</h2>
+        <img src="@Model.Image" style="width:200px;" />
+        <p>Status: @Model.Status</p>
+        <p>Species: @Model.Species</p>
+    }
+
+</div>

@@ -1,0 +1,23 @@
+﻿@model MovieMVCDemo.ViewModel.CreateMovieVM
+
+<h2>Create Movie</h2>
+
+<form asp-action="Create" method="post">
+
+    <div class="mb-3">
+        <label asp-for="Title" class="form-label"></label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Genre" class="form-label"></label>
+        <input asp-for="Genre" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ReleaseYear" class="form-label"></label>
+        <input asp-for="ReleaseYear" class="form-control"  />
+    </div>
+
+    <button type="submit"> Save </button>
+</form>

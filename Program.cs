@@ -9,6 +9,11 @@ namespace MovieMVCDemo
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            builder.Services.AddHttpClient("RickAndMortyApi", options =>
+            {
+                options.BaseAddress = new Uri("https://rickandmortyapi.com/api/");
+            });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
